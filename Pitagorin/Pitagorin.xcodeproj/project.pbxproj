@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456124BC18EF058A006D2E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BB18EF058A006D2E3A /* Foundation.framework */; };
+		456124BE18EF058A006D2E3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BD18EF058A006D2E3A /* CoreGraphics.framework */; };
+		456124C018EF058A006D2E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BF18EF058A006D2E3A /* UIKit.framework */; };
+		456124C618EF058A006D2E3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 456124C418EF058A006D2E3A /* InfoPlist.strings */; };
+		456124C818EF058A006D2E3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 456124C718EF058A006D2E3A /* main.m */; };
+		456124CC18EF058A006D2E3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 456124CB18EF058A006D2E3A /* AppDelegate.m */; };
+		456124CE18EF058A006D2E3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456124CD18EF058A006D2E3A /* Images.xcassets */; };
+		456124D518EF058A006D2E3A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124D418EF058A006D2E3A /* XCTest.framework */; };
+		456124D618EF058A006D2E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BB18EF058A006D2E3A /* Foundation.framework */; };
+		456124D718EF058A006D2E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BF18EF058A006D2E3A /* UIKit.framework */; };
+		456124DF18EF058A006D2E3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 456124DD18EF058A006D2E3A /* InfoPlist.strings */; };
+		456124E118EF058A006D2E3A /* PitagorinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 456124E018EF058A006D2E3A /* PitagorinTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456124D818EF058A006D2E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456124B018EF058A006D2E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456124B718EF058A006D2E3A;
+			remoteInfo = Pitagorin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		456124B818EF058A006D2E3A /* Pitagorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitagorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456124BB18EF058A006D2E3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		456124BD18EF058A006D2E3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		456124BF18EF058A006D2E3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		456124C318EF058A006D2E3A /* Pitagorin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pitagorin-Info.plist"; sourceTree = "<group>"; };
+		456124C518EF058A006D2E3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		456124C718EF058A006D2E3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		456124C918EF058A006D2E3A /* Pitagorin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pitagorin-Prefix.pch"; sourceTree = "<group>"; };
+		456124CA18EF058A006D2E3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		456124CB18EF058A006D2E3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		456124CD18EF058A006D2E3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		456124D318EF058A006D2E3A /* PitagorinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitagorinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		456124D418EF058A006D2E3A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		456124DC18EF058A006D2E3A /* PitagorinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitagorinTests-Info.plist"; sourceTree = "<group>"; };
+		456124DE18EF058A006D2E3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		456124E018EF058A006D2E3A /* PitagorinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PitagorinTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456124B518EF058A006D2E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124BE18EF058A006D2E3A /* CoreGraphics.framework in Frameworks */,
+				456124C018EF058A006D2E3A /* UIKit.framework in Frameworks */,
+				456124BC18EF058A006D2E3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456124D018EF058A006D2E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124D518EF058A006D2E3A /* XCTest.framework in Frameworks */,
+				456124D718EF058A006D2E3A /* UIKit.framework in Frameworks */,
+				456124D618EF058A006D2E3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456124AF18EF058A006D2E3A = {
+			isa = PBXGroup;
+			children = (
+				456124C118EF058A006D2E3A /* Pitagorin */,
+				456124DA18EF058A006D2E3A /* PitagorinTests */,
+				456124BA18EF058A006D2E3A /* Frameworks */,
+				456124B918EF058A006D2E3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		456124B918EF058A006D2E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456124B818EF058A006D2E3A /* Pitagorin.app */,
+				456124D318EF058A006D2E3A /* PitagorinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456124BA18EF058A006D2E3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456124BB18EF058A006D2E3A /* Foundation.framework */,
+				456124BD18EF058A006D2E3A /* CoreGraphics.framework */,
+				456124BF18EF058A006D2E3A /* UIKit.framework */,
+				456124D418EF058A006D2E3A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		456124C118EF058A006D2E3A /* Pitagorin */ = {
+			isa = PBXGroup;
+			children = (
+				456124CA18EF058A006D2E3A /* AppDelegate.h */,
+				456124CB18EF058A006D2E3A /* AppDelegate.m */,
+				456124CD18EF058A006D2E3A /* Images.xcassets */,
+				456124C218EF058A006D2E3A /* Supporting Files */,
+			);
+			path = Pitagorin;
+			sourceTree = "<group>";
+		};
+		456124C218EF058A006D2E3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				456124C318EF058A006D2E3A /* Pitagorin-Info.plist */,
+				456124C418EF058A006D2E3A /* InfoPlist.strings */,
+				456124C718EF058A006D2E3A /* main.m */,
+				456124C918EF058A006D2E3A /* Pitagorin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		456124DA18EF058A006D2E3A /* PitagorinTests */ = {
+			isa = PBXGroup;
+			children = (
+				456124E018EF058A006D2E3A /* PitagorinTests.m */,
+				456124DB18EF058A006D2E3A /* Supporting Files */,
+			);
+			path = PitagorinTests;
+			sourceTree = "<group>";
+		};
+		456124DB18EF058A006D2E3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				456124DC18EF058A006D2E3A /* PitagorinTests-Info.plist */,
+				456124DD18EF058A006D2E3A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456124B718EF058A006D2E3A /* Pitagorin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456124E418EF058A006D2E3A /* Build configuration list for PBXNativeTarget "Pitagorin" */;
+			buildPhases = (
+				456124B418EF058A006D2E3A /* Sources */,
+				456124B518EF058A006D2E3A /* Frameworks */,
+				456124B618EF058A006D2E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitagorin;
+			productName = Pitagorin;
+			productReference = 456124B818EF058A006D2E3A /* Pitagorin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		456124D218EF058A006D2E3A /* PitagorinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456124E718EF058A006D2E3A /* Build configuration list for PBXNativeTarget "PitagorinTests" */;
+			buildPhases = (
+				456124CF18EF058A006D2E3A /* Sources */,
+				456124D018EF058A006D2E3A /* Frameworks */,
+				456124D118EF058A006D2E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				456124D918EF058A006D2E3A /* PBXTargetDependency */,
+			);
+			name = PitagorinTests;
+			productName = PitagorinTests;
+			productReference = 456124D318EF058A006D2E3A /* PitagorinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456124B018EF058A006D2E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Lorenzov;
+				TargetAttributes = {
+					456124D218EF058A006D2E3A = {
+						TestTargetID = 456124B718EF058A006D2E3A;
+					};
+				};
+			};
+			buildConfigurationList = 456124B318EF058A006D2E3A /* Build configuration list for PBXProject "Pitagorin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 456124AF18EF058A006D2E3A;
+			productRefGroup = 456124B918EF058A006D2E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456124B718EF058A006D2E3A /* Pitagorin */,
+				456124D218EF058A006D2E3A /* PitagorinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456124B618EF058A006D2E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124C618EF058A006D2E3A /* InfoPlist.strings in Resources */,
+				456124CE18EF058A006D2E3A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456124D118EF058A006D2E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124DF18EF058A006D2E3A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456124B418EF058A006D2E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124CC18EF058A006D2E3A /* AppDelegate.m in Sources */,
+				456124C818EF058A006D2E3A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456124CF18EF058A006D2E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456124E118EF058A006D2E3A /* PitagorinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		456124D918EF058A006D2E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456124B718EF058A006D2E3A /* Pitagorin */;
+			targetProxy = 456124D818EF058A006D2E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		456124C418EF058A006D2E3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456124C518EF058A006D2E3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		456124DD18EF058A006D2E3A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456124DE18EF058A006D2E3A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		456124E218EF058A006D2E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		456124E318EF058A006D2E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456124E518EF058A006D2E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pitagorin/Pitagorin-Prefix.pch";
+				INFOPLIST_FILE = "Pitagorin/Pitagorin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		456124E618EF058A006D2E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pitagorin/Pitagorin-Prefix.pch";
+				INFOPLIST_FILE = "Pitagorin/Pitagorin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		456124E818EF058A006D2E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pitagorin.app/Pitagorin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pitagorin/Pitagorin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PitagorinTests/PitagorinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		456124E918EF058A006D2E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pitagorin.app/Pitagorin";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pitagorin/Pitagorin-Prefix.pch";
+				INFOPLIST_FILE = "PitagorinTests/PitagorinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456124B318EF058A006D2E3A /* Build configuration list for PBXProject "Pitagorin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456124E218EF058A006D2E3A /* Debug */,
+				456124E318EF058A006D2E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456124E418EF058A006D2E3A /* Build configuration list for PBXNativeTarget "Pitagorin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456124E518EF058A006D2E3A /* Debug */,
+				456124E618EF058A006D2E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		456124E718EF058A006D2E3A /* Build configuration list for PBXNativeTarget "PitagorinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456124E818EF058A006D2E3A /* Debug */,
+				456124E918EF058A006D2E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456124B018EF058A006D2E3A /* Project object */;
+}
