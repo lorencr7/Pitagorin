@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
     [self stopActivityIndicator];
+    //sleep(2);
+    [self startTimer];
 	// Do any additional setup after loading the view.
 }
 

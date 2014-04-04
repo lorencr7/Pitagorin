@@ -76,6 +76,7 @@
 }
 
 -(void) configureFrame {
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         int altoNavigationBar = -20;
         int altoTabBar = 0;
