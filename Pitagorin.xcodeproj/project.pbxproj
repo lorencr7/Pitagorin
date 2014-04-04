@@ -443,6 +443,7 @@
 				456124E618EF058A006D2E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		456124E718EF058A006D2E3A /* Build configuration list for PBXNativeTarget "PitagorinTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +452,7 @@
 				456124E918EF058A006D2E3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
