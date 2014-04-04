@@ -7,14 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "ContainerMainWindowViewController.h"
+#import "AdViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ContainerMainWindowViewController * mainViewController = [[ContainerMainWindowViewController alloc] init];
+    UINavigationController * navigationViewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.adViewController = [[AdViewController alloc] initWithMainViewController:navigationViewController];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.adViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
