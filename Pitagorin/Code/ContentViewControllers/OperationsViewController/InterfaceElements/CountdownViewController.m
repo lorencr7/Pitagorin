@@ -42,7 +42,7 @@
 }
 
 -(void) setUpTimer {
-    self.countDownLabel = [[UILabel alloc] initWithFrame:CGRectMake(80, 0, 100, 50)];
+    self.countDownLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     self.countDownLabel.textColor = [UIColor redColor];
     self.countDownLabel.text = [NSString stringWithFormat:@"%d",self.timeLeft];
     self.countDownLabel.backgroundColor = [UIColor greenColor];
