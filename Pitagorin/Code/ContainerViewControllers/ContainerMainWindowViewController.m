@@ -42,7 +42,10 @@
 }
 
 -(void) createViewControllers {
-    CGRect frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    CGRect frame = CGRectMake(0,
+                              0,
+                              self.view.frame.size.width,
+                              self.view.frame.size.height);
     SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
     
     [self.view addSubview:sumaViewController.view];

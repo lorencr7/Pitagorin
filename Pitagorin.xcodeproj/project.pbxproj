@@ -60,6 +60,7 @@
 		456124D718EF058A006D2E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BF18EF058A006D2E3A /* UIKit.framework */; };
 		456124DF18EF058A006D2E3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 456124DD18EF058A006D2E3A /* InfoPlist.strings */; };
 		456124E118EF058A006D2E3A /* PitagorinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 456124E018EF058A006D2E3A /* PitagorinTests.m */; };
+		45CC1D5818F6CB95001E9CBE /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +171,8 @@
 		456124DC18EF058A006D2E3A /* PitagorinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PitagorinTests-Info.plist"; sourceTree = "<group>"; };
 		456124DE18EF058A006D2E3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		456124E018EF058A006D2E3A /* PitagorinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PitagorinTests.m; sourceTree = "<group>"; };
+		45CC1D5618F6CB95001E9CBE /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
+		45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +365,7 @@
 		450F22CB18EF147D00F6532A /* OperationsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				45CC1D5518F6CB84001E9CBE /* InterfaceElements */,
 				450F22CC18EF149000F6532A /* OperationViewController.h */,
 				450F22CD18EF149000F6532A /* OperationViewController.m */,
 				450F22CF18EF14A200F6532A /* SumaViewController.h */,
@@ -445,6 +449,15 @@
 				456124DD18EF058A006D2E3A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45CC1D5518F6CB84001E9CBE /* InterfaceElements */ = {
+			isa = PBXGroup;
+			children = (
+				45CC1D5618F6CB95001E9CBE /* CountdownViewController.h */,
+				45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */,
+			);
+			path = InterfaceElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,6 +567,7 @@
 				450F22CA18EF0A7A00F6532A /* ContainerMainWindowViewController.m in Sources */,
 				450F22B318EF071300F6532A /* ASIDataDecompressor.m in Sources */,
 				450F22CE18EF149000F6532A /* OperationViewController.m in Sources */,
+				45CC1D5818F6CB95001E9CBE /* CountdownViewController.m in Sources */,
 				450F22B418EF071300F6532A /* ASIDownloadCache.m in Sources */,
 				450F228818EF06BC00F6532A /* CustomHeaderFooterAppearance.m in Sources */,
 				456124CC18EF058A006D2E3A /* AppDelegate.m in Sources */,

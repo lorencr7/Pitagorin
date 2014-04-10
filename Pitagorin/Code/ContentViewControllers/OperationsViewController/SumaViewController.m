@@ -7,6 +7,7 @@
 //
 
 #import "SumaViewController.h"
+#import "CountdownViewController.h"
 
 @interface SumaViewController ()
 
@@ -17,9 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self stopActivityIndicator];
+
     //sleep(2);
-    [self startTimer];
+    //[self startTimer];
 	// Do any additional setup after loading the view.
 }
 
@@ -27,6 +28,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) createData {
+    [super createData];
+    [self.countdownViewController startTimer];
+    [self stopActivityIndicator];
+
 }
 
 @end

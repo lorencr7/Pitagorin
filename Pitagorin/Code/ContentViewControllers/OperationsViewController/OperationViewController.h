@@ -8,12 +8,9 @@
 
 #import "LoadableViewController.h"
 
+@class CountdownViewController;
 @interface OperationViewController : LoadableViewController
 
-@property(strong, nonatomic) UILabel * countDownLabel;
-@property(strong, nonatomic) NSTimer * timer;
-@property(assign, nonatomic) int timeLeft;
-
--(void) startTimer;
+@property(strong, nonatomic) CountdownViewController * countdownViewController;
 
 @end
