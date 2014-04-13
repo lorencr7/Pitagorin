@@ -34,7 +34,7 @@
         CGPoint touchPoint = [pGesture locationInView:self];
         NSIndexPath* rowIndexPath = [tableView indexPathForRowAtPoint:touchPoint];
         if (rowIndexPath != nil) {
-            NSLog(@"%d", rowIndexPath.row);
+            //NSLog(@"%d", rowIndexPath.row);
             // Ponemos sacar opciones (un activity estaría bien)
         }
     }
@@ -52,10 +52,10 @@
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) { // Boton de eliminar pulsado
-        int countSections = [self.section.sections count];
+        NSUInteger countSections = [self.section.sections count];
         if (countSections > 0 && indexPath.section >= 0 && indexPath.section < countSections) {
             SectionElement *sectionElement = [self.section.sections objectAtIndex:indexPath.section];
-            int countElements = [sectionElement.cells count];
+            NSUInteger countElements = [sectionElement.cells count];
             if (countElements > 0 && indexPath.row >= 0 && indexPath.row < countElements) {
                 CustomCell * customCell = [sectionElement.cells objectAtIndex:indexPath.row];
                 [customCell deleteCell:self.viewController];

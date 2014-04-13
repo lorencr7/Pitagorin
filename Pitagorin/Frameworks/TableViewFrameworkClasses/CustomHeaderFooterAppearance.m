@@ -19,7 +19,7 @@
 @synthesize labelBorderWidth = _labelBorderWidth;
 @synthesize labelBorderRadius = _labelBorderRadius;
 
-- (id)initWithAppearance: (CGRect) labelFrame labelBackgroundColor: (UIColor*) labelBackgroundColor labelTextColor: (UIColor*) labelTextColor labelTextFont: (UIFont*) labelTextFont labelTextAlignment: (UITextAlignment) labelTextAlignment labelBorderColor: (UIColor*) labelBorderColor labelBorderWidth: (double) labelBorderWidth labelBorderRadius: (double) labelBorderRadius {
+- (id)initWithAppearance: (CGRect) labelFrame labelBackgroundColor: (UIColor*) labelBackgroundColor labelTextColor: (UIColor*) labelTextColor labelTextFont: (UIFont*) labelTextFont labelTextAlignment: (NSTextAlignment) labelTextAlignment labelBorderColor: (UIColor*) labelBorderColor labelBorderWidth: (double) labelBorderWidth labelBorderRadius: (double) labelBorderRadius {
     self = [super init];
     if (self) {
         self.labelFrame = labelFrame;

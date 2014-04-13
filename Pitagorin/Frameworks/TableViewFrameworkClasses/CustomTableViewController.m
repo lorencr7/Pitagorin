@@ -106,7 +106,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [self.section getCellHeightFromSection: indexPath.section Row: indexPath.row];
+    return (CGFloat)[self.section getCellHeightFromSection: indexPath.section Row: indexPath.row];
 }
 
 
@@ -202,11 +202,11 @@
 @synthesize sections = _sections;
 
 
--(int) getNumberOfSections{
+-(NSInteger) getNumberOfSections{
     return self.sections.count;
 }
 
--(int) getNumberOfCells:(int) section {
+-(NSInteger) getNumberOfCells:(NSInteger) section {
     SectionElement * sectionElement;
     sectionElement = (self.sections)[section];//Nos metemos dentro de la seccion
     return [sectionElement.cells count];//Devolvemos el numero de celdas de esa seccion
@@ -216,7 +216,7 @@
     return self.title;
 }
 
--(CustomCell *) getCellFromSection: (int) section Row: (int) row {
+-(CustomCell *) getCellFromSection: (NSInteger) section Row: (NSInteger) row {
     SectionElement * sectionElement;
     CustomCell * customCell;
     sectionElement = (self.sections)[section];//Buscamos la seccion que sea
@@ -252,7 +252,7 @@
 }
 
 
--(CGFloat) getCellHeightFromSection: (int) section Row: (int) row {
+-(CGFloat) getCellHeightFromSection: (NSInteger) section Row: (NSInteger) row {
     CustomCell * customCell;
     SectionElement *sectionElement;
     sectionElement = (self.sections)[section];
@@ -281,7 +281,7 @@
         for (SectionElement * sectionElement in sectionsElements) {
             [self.sections addObject:sectionElement];
         }
-        self.numberOfSections = [self.sections count];
+        self.numberOfSections = (int)[self.sections count];
         self.title = @"Test";
     }
     return self;

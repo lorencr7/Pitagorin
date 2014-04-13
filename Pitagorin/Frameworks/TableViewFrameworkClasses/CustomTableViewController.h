@@ -26,13 +26,13 @@
 @property (strong,nonatomic,readwrite) NSString *title;
 @property (strong,nonatomic,readwrite) NSMutableArray * sections;
 //Devuelve el numero de secciones del apartado
--(int) getNumberOfSections;
+-(NSInteger) getNumberOfSections;
 //Devuelve el numero de celdas por seccion
--(int) getNumberOfCells:(int) section;
+-(NSInteger) getNumberOfCells:(NSInteger) section;
 //Devuelve el titulo del apartado
 - (NSString *) getTitle;
 //Nos devuelve el CeldaCap Correspondiente a una posicion concreta dentro del UITableView
--(CustomCell *) getCellFromSection: (int) section Row: (int) row;
+-(CustomCell *) getCellFromSection: (NSInteger) section Row: (NSInteger) row;
 //Nos devuelve el titulo de la seccion
 //-(NSString *) getTituloSeccion: (NSInteger)section;
 //Nos devuelve el subtitulo de la seccion
@@ -42,7 +42,7 @@
 //Nos devuelve el tamano del subtitulo seccion
 -(CGFloat) getSectionSubtitleSize: (NSInteger) section;
 //Nos devuelve el tamano de la celda
--(CGFloat) getCellHeightFromSection: (int) section Row: (int) row;
+-(CGFloat) getCellHeightFromSection: (NSInteger) section Row: (NSInteger) row;
 -(UIView *) getSectionTitleAspect: (NSInteger)section;
 -(UIView *) getSectionFooterAspect: (NSInteger)section;
 - (id)initWithSections: (NSArray *) sectionsElements;

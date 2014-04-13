@@ -8,6 +8,7 @@
 
 #import "ContainerMainWindowViewController.h"
 #import "SumaViewController.h"
+#import "MainMenuViewController.h"
 
 @interface ContainerMainWindowViewController ()
 
@@ -46,10 +47,11 @@
                               0,
                               self.view.frame.size.width,
                               self.view.frame.size.height);
-    SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
-    
-    [self.view addSubview:sumaViewController.view];
-    [self addChildViewController:sumaViewController];
+    //SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
+    MainMenuViewController * mainMenuViewController = [[MainMenuViewController alloc] initWithFrame:frame];
+
+    [self.view addSubview:mainMenuViewController.view];
+    [self addChildViewController:mainMenuViewController];
 }
 
 @end

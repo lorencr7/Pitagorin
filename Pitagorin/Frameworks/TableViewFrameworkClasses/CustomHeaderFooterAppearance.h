@@ -15,11 +15,11 @@
 @property (strong,nonatomic) UIColor * labelBackgroundColor;
 @property (strong,nonatomic) UIColor * labelTextColor;
 @property (strong,nonatomic) UIFont * labelTextFont;
-@property (assign,nonatomic) UITextAlignment labelTextAlignment;
+@property (assign,nonatomic) NSTextAlignment labelTextAlignment;
 @property (strong,nonatomic) UIColor * labelBorderColor;
 @property (assign,nonatomic) double labelBorderWidth;
 @property (assign,nonatomic) double labelBorderRadius;
 
-- (id)initWithAppearance: (CGRect) labelFrame labelBackgroundColor: (UIColor*) labelBackgroundColor labelTextColor: (UIColor*) labelTextColor labelTextFont: (UIFont*) labelTextFont labelTextAlignment: (UITextAlignment) labelTextAlignment labelBorderColor: (UIColor*) labelBorderColor labelBorderWidth: (double) labelBorderWidth labelBorderRadius: (double) labelBorderRadius; 
+- (id)initWithAppearance: (CGRect) labelFrame labelBackgroundColor: (UIColor*) labelBackgroundColor labelTextColor: (UIColor*) labelTextColor labelTextFont: (UIFont*) labelTextFont labelTextAlignment: (NSTextAlignment) labelTextAlignment labelBorderColor: (UIColor*) labelBorderColor labelBorderWidth: (double) labelBorderWidth labelBorderRadius: (double) labelBorderRadius; 
 
 @end
