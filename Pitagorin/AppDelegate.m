@@ -9,11 +9,15 @@
 #import "AppDelegate.h"
 #import "ContainerMainWindowViewController.h"
 #import "AdViewController.h"
+#import <RevMobAds/RevMobAds.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [RevMobAds startSessionWithAppID:@"534bccd04585241703ccca68"];
+    [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     ContainerMainWindowViewController * mainViewController = [[ContainerMainWindowViewController alloc] init];
@@ -23,6 +27,9 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = self.adViewController;
     [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

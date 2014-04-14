@@ -26,13 +26,15 @@
 {
     [super viewDidLoad];
     [self configureFrame];
-    /*UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(300, 0, 200, 50)];
-    label.text = @"adios";
-    [self.view addSubview:label];*/
     self.edgesForExtendedLayout = UIRectEdgeNone;
     //NSLog(@"%.2f,%.2f,%.2f,%.2f",self.view.frame.origin.x,self.view.frame.origin.y,self.view.frame.size.width,self.view.frame.size.height);
     [self.view addSubview:self.mainViewController.view];
     [self addChildViewController:self.mainViewController];
+    
+    //[[RevMobAds session] showBanner];
+    self.banner = [[RevMobAds session] banner];
+    self.banner.delegate = self;
+    [self.banner loadAd];
 }
 
 -(void) configureFrame {
@@ -45,6 +47,30 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)revmobAdDidFailWithError:(NSError *)error {
+    NSLog(@"Ad failed with error: %@", error);
+}
+
+- (void)revmobAdDidReceive {
+    NSLog(@"Ad loaded successfullly");
+    [self.banner showAd];
+}
+
+- (void)revmobAdDisplayed {
+    CGRect frame = self.mainViewController.view.frame;
+    frame.size.height -= 70;
+    self.mainViewController.view.frame = frame;
+    NSLog(@"Ad displayed");
+}
+
+- (void)revmobUserClickedInTheAd {
+    NSLog(@"User clicked in the ad");
+}
+
+- (void)revmobUserClosedTheAd {
+    NSLog(@"User closed the ad");
 }
 
 @end

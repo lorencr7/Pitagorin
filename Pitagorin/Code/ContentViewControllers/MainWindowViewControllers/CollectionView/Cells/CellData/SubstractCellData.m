@@ -1,23 +1,24 @@
 //
-//  AddCellData.m
+//  SubstractCellData.m
 //  Pitagorin
 //
 //  Created by Lorenzo Villarroel Pérez on 14/04/14.
 //  Copyright (c) 2014 Lorenzov. All rights reserved.
 //
 
-#import "AddCellData.h"
+#import "SubstractCellData.h"
 
-@implementation AddCellData
+@implementation SubstractCellData
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        self.image = @"addition.png";
-        self.text = NSLocalizedString(@"Addition", nil);
+        self.image = @"substraction.png";
+        self.text = NSLocalizedString(@"Substraction", nil);
     }
     return self;
 }
+
 
 @end

@@ -11,6 +11,7 @@
 #import "Cell.h"
 #import "CellData.h"
 #import "AddCellData.h"
+#import "SubstractCellData.h"
 
 @interface MainMenuViewController ()
 
@@ -43,6 +44,24 @@
 -(void) initElements {
     self.elements = [NSMutableArray array];
     
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[SubstractCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
+    [self.elements addObject:[[AddCellData alloc] init]];
     [self.elements addObject:[[AddCellData alloc] init]];
 }
 

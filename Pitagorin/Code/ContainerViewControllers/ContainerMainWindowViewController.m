@@ -19,7 +19,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.title = @"Main";
+        self.title = NSLocalizedString(@"Pitagorin", nil);
     }
     return self;
 }

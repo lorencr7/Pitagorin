@@ -51,6 +51,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.frame = self.frame;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.view.backgroundColor = [UIColor clearColor];
     [self iniciarActivityIndicator];
     [self iniciarActivityIndicatorForeGround];

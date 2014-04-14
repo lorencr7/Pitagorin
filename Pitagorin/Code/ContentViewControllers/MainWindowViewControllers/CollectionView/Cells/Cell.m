@@ -27,6 +27,7 @@
                                                                frame.size.width,
                                                                frame.size.height - originY)];
         self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.font = [UIFont systemFontOfSize:14.0];
         
         
         [self.contentView addSubview:self.image];
