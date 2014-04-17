@@ -46,23 +46,9 @@
     
     [self.elements addObject:[[AddCellData alloc] init]];
     [self.elements addObject:[[SubstractCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
-    [self.elements addObject:[[AddCellData alloc] init]];
+    for (int i = 0; i < 70; i++) {
+        [self.elements addObject:[[AddCellData alloc] init]];
+    }
 }
 
 -(void) initCollectionView {

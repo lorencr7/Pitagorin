@@ -1,29 +1,28 @@
 //
-//  ContainerMainWindowViewController.m
+//  ContainerModeWindowViewController.m
 //  Pitagorin
 //
-//  Created by Lorenzo Villarroel Pérez on 04/04/14.
+//  Created by Lorenzo Villarroel Pérez on 17/04/14.
 //  Copyright (c) 2014 Lorenzov. All rights reserved.
 //
 
-#import "ContainerMainWindowViewController.h"
-#import "SumaViewController.h"
-#import "MainMenuViewController.h"
+#import "ContainerModeWindowViewController.h"
+#import "ModeWindowViewController.h"
 
-@interface ContainerMainWindowViewController ()
+@interface ContainerModeWindowViewController ()
 
 @end
 
-@implementation ContainerMainWindowViewController
+@implementation ContainerModeWindowViewController
 
-- (id)init {
+- (instancetype)initWithOperationType: (OperationTypes) operationType {
     self = [super init];
     if (self) {
-        self.title = NSLocalizedString(@"Pitagorin", nil);
+        self.operationType = operationType;
+        self.title = NSLocalizedString(@"Mode Selection", nil);
     }
     return self;
 }
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,10 +42,10 @@
                               self.view.frame.size.width,
                               self.view.frame.size.height);
     //SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
-    MainMenuViewController * mainMenuViewController = [[MainMenuViewController alloc] initWithFrame:frame];
-
-    [self.view addSubview:mainMenuViewController.view];
-    [self addChildViewController:mainMenuViewController];
+    ModeWindowViewController * modeWindowViewController = [[ModeWindowViewController alloc] initWithFrame:frame];
+    
+    [self.view addSubview:modeWindowViewController.view];
+    [self addChildViewController:modeWindowViewController];
 }
 
 @end

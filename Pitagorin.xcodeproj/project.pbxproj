@@ -67,6 +67,8 @@
 		4570FC6D18FB48A40018D2F2 /* AddCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4570FC6C18FB48A40018D2F2 /* AddCellData.m */; };
 		4570FC7018FB51980018D2F2 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4570FC6F18FB51980018D2F2 /* logo.png */; };
 		4570FC7218FB52000018D2F2 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4570FC7118FB52000018D2F2 /* logo@2x.png */; };
+		4580FA8E19004CC5005FD4C7 /* ContainerModeWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580FA8D19004CC5005FD4C7 /* ContainerModeWindowViewController.m */; };
+		4580FA9219004CE2005FD4C7 /* ModeWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580FA9119004CE2005FD4C7 /* ModeWindowViewController.m */; };
 		45CC1D5818F6CB95001E9CBE /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */; };
 		45EB5C8018FC197300F9A9C6 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB5C7F18FC197300F9A9C6 /* RevMobAds.framework */; };
 		45EB5C8218FC19AD00F9A9C6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB5C8118FC19AD00F9A9C6 /* StoreKit.framework */; };
@@ -198,6 +200,11 @@
 		4570FC6C18FB48A40018D2F2 /* AddCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCellData.m; sourceTree = "<group>"; };
 		4570FC6F18FB51980018D2F2 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		4570FC7118FB52000018D2F2 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		4580FA8C19004CC5005FD4C7 /* ContainerModeWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerModeWindowViewController.h; sourceTree = "<group>"; };
+		4580FA8D19004CC5005FD4C7 /* ContainerModeWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerModeWindowViewController.m; sourceTree = "<group>"; };
+		4580FA9019004CE2005FD4C7 /* ModeWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModeWindowViewController.h; sourceTree = "<group>"; };
+		4580FA9119004CE2005FD4C7 /* ModeWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModeWindowViewController.m; sourceTree = "<group>"; };
+		4580FA9419004E56005FD4C7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		45CC1D5618F6CB95001E9CBE /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 		45EB5C7F18FC197300F9A9C6 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevMobAds.framework; path = "../../Downloads/revmob-ios-sdk/RevMobAds.framework"; sourceTree = "<group>"; };
@@ -368,6 +375,7 @@
 		450F22C118EF083600F6532A /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				4580FA9319004E43005FD4C7 /* Models */,
 				450F22C418EF091200F6532A /* AdViewController */,
 				450F22C218EF083600F6532A /* ContainerViewControllers */,
 				450F22C318EF083600F6532A /* ContentViewControllers */,
@@ -380,6 +388,8 @@
 			children = (
 				450F22C818EF0A7A00F6532A /* ContainerMainWindowViewController.h */,
 				450F22C918EF0A7A00F6532A /* ContainerMainWindowViewController.m */,
+				4580FA8C19004CC5005FD4C7 /* ContainerModeWindowViewController.h */,
+				4580FA8D19004CC5005FD4C7 /* ContainerModeWindowViewController.m */,
 			);
 			path = ContainerViewControllers;
 			sourceTree = "<group>";
@@ -387,6 +397,7 @@
 		450F22C318EF083600F6532A /* ContentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4580FA8F19004CCE005FD4C7 /* ModeWindowViewControllers */,
 				4570FC5618FB067C0018D2F2 /* MainWindowViewControllers */,
 				450F22CB18EF147D00F6532A /* OperationsViewController */,
 			);
@@ -559,6 +570,23 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		4580FA8F19004CCE005FD4C7 /* ModeWindowViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4580FA9019004CE2005FD4C7 /* ModeWindowViewController.h */,
+				4580FA9119004CE2005FD4C7 /* ModeWindowViewController.m */,
+			);
+			path = ModeWindowViewControllers;
+			sourceTree = "<group>";
+		};
+		4580FA9319004E43005FD4C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4580FA9419004E56005FD4C7 /* Constants.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		45CC1D5518F6CB84001E9CBE /* InterfaceElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,10 +702,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				450F228A18EF06BC00F6532A /* CustomTableViewEditController.m in Sources */,
+				4580FA8E19004CC5005FD4C7 /* ContainerModeWindowViewController.m in Sources */,
 				450F228618EF06BC00F6532A /* CustomCellAppearance.m in Sources */,
 				4570FC6618FB2BBF0018D2F2 /* CollectionViewFlowLayout.m in Sources */,
 				450F228218EF06BC00F6532A /* Reachability.m in Sources */,
 				450F227D18EF06BC00F6532A /* RefreshableViewController.m in Sources */,
+				4580FA9219004CE2005FD4C7 /* ModeWindowViewController.m in Sources */,
 				450F228518EF06BC00F6532A /* CustomCell.m in Sources */,
 				450F22CA18EF0A7A00F6532A /* ContainerMainWindowViewController.m in Sources */,
 				450F22B318EF071300F6532A /* ASIDataDecompressor.m in Sources */,

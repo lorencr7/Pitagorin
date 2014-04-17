@@ -28,7 +28,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self putBackButton];
+    //[self putBackButton];
     [self configureFrame];
 	// Do any additional setup after loading the view.
 }

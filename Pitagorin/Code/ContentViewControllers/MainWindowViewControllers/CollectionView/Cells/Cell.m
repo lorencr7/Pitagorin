@@ -34,7 +34,7 @@
         [self.contentView addSubview:self.label];
         
         //self.contentView.backgroundColor = BACKGROUNDCOLOR;
-        self.contentView.backgroundColor = [UIColor redColor];
+        self.contentView.backgroundColor = [UIColor whiteColor];
         
         //self.contentView.layer.borderColor = [[UIColor colorWithRed:(65.0/255.0) green:(81.0/255.0) blue:(103.0/255.0) alpha:1] CGColor];
         /*self.contentView.layer.borderColor = [[UIColor whiteColor] CGColor];

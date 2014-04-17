@@ -60,7 +60,12 @@
 
 - (void)revmobAdDisplayed {
     CGRect frame = self.mainViewController.view.frame;
-    frame.size.height -= 70;
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        frame.size.height -= 70;
+    } else {
+        frame.size.height -= 134;
+    }
+    
     self.mainViewController.view.frame = frame;
     NSLog(@"Ad displayed");
 }

@@ -20,6 +20,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    [self setAppAppearance];
+    
     ContainerMainWindowViewController * mainViewController = [[ContainerMainWindowViewController alloc] init];
     UINavigationController * navigationViewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     self.adViewController = [[AdViewController alloc] initWithMainViewController:navigationViewController];
@@ -31,6 +33,48 @@
     
     
     return YES;
+}
+
+-(void) setAppAppearance {
+    NSMutableDictionary * mutableDictionaryNavigation = [[NSMutableDictionary alloc] init];
+    [mutableDictionaryNavigation setObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    [mutableDictionaryNavigation setObject:[UIFont fontWithName:@"HelveticaNeue" size:19] forKey:NSFontAttributeName];
+    [[UINavigationBar appearance] setTitleTextAttributes:mutableDictionaryNavigation];
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    //[[UINavigationBar appearance] setBackgroundImage:NAVIGATIONBARIMAGE forBarMetrics:UIBarMetricsDefault];
+    //[[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
+    [[UIToolbar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UIToolbar appearance] setTintColor:[UIColor blackColor]];
+    
+    NSMutableDictionary * mutableDictionaryNormal = [[NSMutableDictionary alloc] init];
+    [mutableDictionaryNormal setObject:[UIColor grayColor] forKey:NSForegroundColorAttributeName];
+    [mutableDictionaryNormal setObject:[UIFont fontWithName:@"HelveticaNeue-Light" size:10] forKey:NSFontAttributeName];
+    NSMutableDictionary * mutableDictionaryPressed = [[NSMutableDictionary alloc] init];
+    [mutableDictionaryPressed setObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    [mutableDictionaryPressed setObject:[UIFont fontWithName:@"HelveticaNeue-Light" size:10] forKey:NSFontAttributeName];
+    [[UITabBarItem appearance] setTitleTextAttributes:mutableDictionaryNormal forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:mutableDictionaryPressed forState:UIControlStateSelected];
+    
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
+    //[[UITabBar appearance] setBackgroundImage:TABBARIMAGE];
+    
+    [[UIButton appearance] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
+    NSMutableDictionary * mutableDictionarySegmentedNormal = [[NSMutableDictionary alloc] init];
+    [mutableDictionarySegmentedNormal setObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    [mutableDictionarySegmentedNormal setObject:[UIFont fontWithName:@"HelveticaNeue" size:14] forKey:NSFontAttributeName];
+    NSMutableDictionary * mutableDictionarySegmentedPressed = [[NSMutableDictionary alloc] init];
+    [mutableDictionarySegmentedPressed setObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    [mutableDictionarySegmentedPressed setObject:[UIFont fontWithName:@"HelveticaNeue" size:14] forKey:NSFontAttributeName];
+    [[UISegmentedControl appearance]setTitleTextAttributes:mutableDictionarySegmentedNormal forState:UIControlStateNormal];
+    [[UISegmentedControl appearance] setTitleTextAttributes:  mutableDictionarySegmentedPressed forState:UIControlStateSelected];
+    [[UISegmentedControl appearance] setTintColor:[UIColor whiteColor]];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

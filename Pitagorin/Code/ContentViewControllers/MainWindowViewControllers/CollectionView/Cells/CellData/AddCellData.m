@@ -7,6 +7,8 @@
 //
 
 #import "AddCellData.h"
+#import "SumaViewController.h"
+#import "ContainerModeWindowViewController.h"
 
 @implementation AddCellData
 
@@ -18,6 +20,11 @@
         self.text = NSLocalizedString(@"Addition", nil);
     }
     return self;
+}
+
+-(void) executeAction:(UIViewController *)viewController {
+    ContainerModeWindowViewController * containerModeWindowViewController = [[ContainerModeWindowViewController alloc] initWithOperationType:Addition];
+    [viewController.navigationController pushViewController:containerModeWindowViewController animated:YES];
 }
 
 @end
