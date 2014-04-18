@@ -10,3 +10,9 @@ typedef enum {
     Addition,
     Substraction
 } OperationTypes;
+
+typedef enum {
+    Survival,
+    Practice,
+    CountDown
+} GameModes;

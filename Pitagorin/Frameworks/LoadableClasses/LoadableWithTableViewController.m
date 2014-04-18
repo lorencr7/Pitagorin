@@ -149,7 +149,7 @@
         
         self.tableViewController.tableView = (UITableView *)self.customTableView;
     }
-    self.tableViewController.tableView.separatorColor = [UIColor whiteColor];
+    //self.tableViewController.tableView.separatorColor = [UIColor whiteColor];
     //self.tableViewController.tableView.acceso
     
     [self addChildViewController:self.tableViewController];

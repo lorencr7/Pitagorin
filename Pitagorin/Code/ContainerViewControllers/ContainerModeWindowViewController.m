@@ -42,7 +42,7 @@
                               self.view.frame.size.width,
                               self.view.frame.size.height);
     //SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
-    ModeWindowViewController * modeWindowViewController = [[ModeWindowViewController alloc] initWithFrame:frame];
+    ModeWindowViewController * modeWindowViewController = [[ModeWindowViewController alloc] initWithFrame:frame OperationType:self.operationType];
     
     [self.view addSubview:modeWindowViewController.view];
     [self addChildViewController:modeWindowViewController];

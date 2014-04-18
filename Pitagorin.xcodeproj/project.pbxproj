@@ -49,6 +49,10 @@
 		450F22CA18EF0A7A00F6532A /* ContainerMainWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F22C918EF0A7A00F6532A /* ContainerMainWindowViewController.m */; };
 		450F22CE18EF149000F6532A /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F22CD18EF149000F6532A /* OperationViewController.m */; };
 		450F22D118EF14A200F6532A /* SumaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450F22D018EF14A200F6532A /* SumaViewController.m */; };
+		452C60C3190088F600EC083B /* CustomCellModePractice.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60C2190088F600EC083B /* CustomCellModePractice.m */; };
+		452C60C61900890B00EC083B /* CustomCellModeSurvival.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60C51900890B00EC083B /* CustomCellModeSurvival.m */; };
+		452C60C91900892200EC083B /* CustomCellModeCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60C81900892200EC083B /* CustomCellModeCountdown.m */; };
+		452C60CF1900A3F700EC083B /* CustomCellMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60CE1900A3F600EC083B /* CustomCellMode.m */; };
 		456124BC18EF058A006D2E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BB18EF058A006D2E3A /* Foundation.framework */; };
 		456124BE18EF058A006D2E3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BD18EF058A006D2E3A /* CoreGraphics.framework */; };
 		456124C018EF058A006D2E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BF18EF058A006D2E3A /* UIKit.framework */; };
@@ -173,6 +177,15 @@
 		450F22CD18EF149000F6532A /* OperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
 		450F22CF18EF14A200F6532A /* SumaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumaViewController.h; sourceTree = "<group>"; };
 		450F22D018EF14A200F6532A /* SumaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumaViewController.m; sourceTree = "<group>"; };
+		452C60C1190088F600EC083B /* CustomCellModePractice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellModePractice.h; sourceTree = "<group>"; };
+		452C60C2190088F600EC083B /* CustomCellModePractice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellModePractice.m; sourceTree = "<group>"; };
+		452C60C41900890B00EC083B /* CustomCellModeSurvival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellModeSurvival.h; sourceTree = "<group>"; };
+		452C60C51900890B00EC083B /* CustomCellModeSurvival.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellModeSurvival.m; sourceTree = "<group>"; };
+		452C60C71900892200EC083B /* CustomCellModeCountdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellModeCountdown.h; sourceTree = "<group>"; };
+		452C60C81900892200EC083B /* CustomCellModeCountdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellModeCountdown.m; sourceTree = "<group>"; };
+		452C60CA19008CB600EC083B /* CustomCellsMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellsMode.h; sourceTree = "<group>"; };
+		452C60CD1900A3F600EC083B /* CustomCellMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellMode.h; sourceTree = "<group>"; };
+		452C60CE1900A3F600EC083B /* CustomCellMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellMode.m; sourceTree = "<group>"; };
 		456124B818EF058A006D2E3A /* Pitagorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitagorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456124BB18EF058A006D2E3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		456124BD18EF058A006D2E3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -425,6 +438,22 @@
 			path = OperationsViewController;
 			sourceTree = "<group>";
 		};
+		452C60BD1900883800EC083B /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				452C60CD1900A3F600EC083B /* CustomCellMode.h */,
+				452C60CE1900A3F600EC083B /* CustomCellMode.m */,
+				452C60C1190088F600EC083B /* CustomCellModePractice.h */,
+				452C60C2190088F600EC083B /* CustomCellModePractice.m */,
+				452C60C41900890B00EC083B /* CustomCellModeSurvival.h */,
+				452C60C51900890B00EC083B /* CustomCellModeSurvival.m */,
+				452C60C71900892200EC083B /* CustomCellModeCountdown.h */,
+				452C60C81900892200EC083B /* CustomCellModeCountdown.m */,
+				452C60CA19008CB600EC083B /* CustomCellsMode.h */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		456124AF18EF058A006D2E3A = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +602,7 @@
 		4580FA8F19004CCE005FD4C7 /* ModeWindowViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				452C60BD1900883800EC083B /* CustomCell */,
 				4580FA9019004CE2005FD4C7 /* ModeWindowViewController.h */,
 				4580FA9119004CE2005FD4C7 /* ModeWindowViewController.m */,
 			);
@@ -707,6 +737,7 @@
 				4570FC6618FB2BBF0018D2F2 /* CollectionViewFlowLayout.m in Sources */,
 				450F228218EF06BC00F6532A /* Reachability.m in Sources */,
 				450F227D18EF06BC00F6532A /* RefreshableViewController.m in Sources */,
+				452C60C61900890B00EC083B /* CustomCellModeSurvival.m in Sources */,
 				4580FA9219004CE2005FD4C7 /* ModeWindowViewController.m in Sources */,
 				450F228518EF06BC00F6532A /* CustomCell.m in Sources */,
 				450F22CA18EF0A7A00F6532A /* ContainerMainWindowViewController.m in Sources */,
@@ -721,9 +752,11 @@
 				456124C818EF058A006D2E3A /* main.m in Sources */,
 				450F22B718EF071300F6532A /* ASIInputStream.m in Sources */,
 				450F22B218EF071300F6532A /* ASIDataCompressor.m in Sources */,
+				452C60C91900892200EC083B /* CustomCellModeCountdown.m in Sources */,
 				450F228B18EF06BC00F6532A /* FabricaCeldas.m in Sources */,
 				450F228718EF06BC00F6532A /* CustomHeaderFooter.m in Sources */,
 				450F228D18EF06BC00F6532A /* SectionElement.m in Sources */,
+				452C60C3190088F600EC083B /* CustomCellModePractice.m in Sources */,
 				450F228C18EF06BC00F6532A /* FabricaHeaderFooterSecciones.m in Sources */,
 				450F228118EF06BC00F6532A /* MemoryPrinter.m in Sources */,
 				450F22B518EF071300F6532A /* ASIFormDataRequest.m in Sources */,
@@ -744,6 +777,7 @@
 				450F228018EF06BC00F6532A /* ImagenGrandeViewController.m in Sources */,
 				450F22B118EF071300F6532A /* ASIAuthenticationDialog.m in Sources */,
 				4570FC6D18FB48A40018D2F2 /* AddCellData.m in Sources */,
+				452C60CF1900A3F700EC083B /* CustomCellMode.m in Sources */,
 				450F228318EF06BC00F6532A /* ScreenSizeManager.m in Sources */,
 				450F227918EF06BC00F6532A /* LoadableWithSegmentedControlViewController.m in Sources */,
 			);
