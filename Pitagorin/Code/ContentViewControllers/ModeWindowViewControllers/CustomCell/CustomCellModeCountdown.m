@@ -11,7 +11,8 @@
 @implementation CustomCellModeCountdown
 
 -(void) executeAction:(UIViewController *)viewController {
-    
+    [GameState getInstance].gameMode = CountDown;
+    [super executeAction:viewController];
 }
 
 

@@ -23,7 +23,8 @@
 }
 
 -(void) executeAction:(UIViewController *)viewController {
-    ContainerModeWindowViewController * containerModeWindowViewController = [[ContainerModeWindowViewController alloc] initWithOperationType:Addition];
+    ContainerModeWindowViewController * containerModeWindowViewController = [[ContainerModeWindowViewController alloc] init];
+    [GameState getInstance].operationType = Addition;
     [viewController.navigationController pushViewController:containerModeWindowViewController animated:YES];
 }
 

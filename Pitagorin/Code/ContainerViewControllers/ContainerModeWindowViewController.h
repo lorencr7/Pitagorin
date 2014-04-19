@@ -8,11 +8,10 @@
 
 #import "RootViewController.h"
 
-@class OperationViewController;
 @interface ContainerModeWindowViewController : RootViewController
 
-@property(assign,nonatomic) OperationTypes operationType;
+//@property(assign,nonatomic) OperationTypes operationType;
 
-- (instancetype)initWithOperationType: (OperationTypes) operationType;
+//- (instancetype)initWithOperationType: (OperationTypes) operationType;
 
 @end

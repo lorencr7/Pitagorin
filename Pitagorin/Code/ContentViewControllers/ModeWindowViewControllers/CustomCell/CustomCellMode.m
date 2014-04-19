@@ -7,15 +7,13 @@
 //
 
 #import "CustomCellMode.h"
+#import "ContainerOperationViewController.h"
 
 @implementation CustomCellMode
 
-- (instancetype)initWithOperationType: (OperationTypes) operationType {
-    self = [super init];
-    if (self) {
-        self.operationType = operationType;
-    }
-    return self;
+-(void) executeAction:(UIViewController *)viewController {
+    ContainerOperationViewController * containerOperationViewController = [[ContainerOperationViewController alloc] init];
+    [viewController.navigationController pushViewController:containerOperationViewController animated:YES];
 }
 
 @end

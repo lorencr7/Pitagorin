@@ -11,7 +11,8 @@
 @implementation CustomCellModeSurvival
 
 -(void) executeAction:(UIViewController *)viewController {
-    
+    [GameState getInstance].gameMode = Survival;
+    [super executeAction:viewController];
 }
 
 

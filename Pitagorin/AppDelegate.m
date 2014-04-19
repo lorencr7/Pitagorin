@@ -15,6 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [GameState getInstance];
     [RevMobAds startSessionWithAppID:@"534bccd04585241703ccca68"];
     [RevMobAds session].testingMode = RevMobAdsTestingModeWithAds;
     

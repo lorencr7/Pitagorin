@@ -10,8 +10,8 @@
 
 @interface CustomCellMode : CustomCell
 
-@property(assign,nonatomic) OperationTypes operationType;
+//@property(assign,nonatomic) OperationTypes operationType;
 
-- (instancetype)initWithOperationType: (OperationTypes) operationType;
+//- (instancetype)initWithOperationType: (OperationTypes) operationType;
 
 @end

@@ -15,14 +15,15 @@
 
 @implementation ContainerModeWindowViewController
 
-- (instancetype)initWithOperationType: (OperationTypes) operationType {
+- (instancetype)init
+{
     self = [super init];
     if (self) {
-        self.operationType = operationType;
         self.title = NSLocalizedString(@"Mode Selection", nil);
     }
     return self;
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,7 +43,7 @@
                               self.view.frame.size.width,
                               self.view.frame.size.height);
     //SumaViewController * sumaViewController = [[SumaViewController alloc] initWithFrame:frame];
-    ModeWindowViewController * modeWindowViewController = [[ModeWindowViewController alloc] initWithFrame:frame OperationType:self.operationType];
+    ModeWindowViewController * modeWindowViewController = [[ModeWindowViewController alloc] initWithFrame:frame];
     
     [self.view addSubview:modeWindowViewController.view];
     [self addChildViewController:modeWindowViewController];

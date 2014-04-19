@@ -8,9 +8,10 @@
 
 #import "LoadableViewController.h"
 
-@class CountdownViewController;
+@class CountdownViewController,State;
 @interface OperationViewController : LoadableViewController
 
 @property(strong, nonatomic) CountdownViewController * countdownViewController;
+@property(strong, nonatomic) State * state;
 
 @end

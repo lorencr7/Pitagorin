@@ -11,7 +11,8 @@
 @implementation CustomCellModePractice
 
 -(void) executeAction:(UIViewController *)viewController {
-    
+    [GameState getInstance].gameMode = Practice;
+    [super executeAction:viewController];
 }
 
 @end

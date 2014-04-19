@@ -53,6 +53,12 @@
 		452C60C61900890B00EC083B /* CustomCellModeSurvival.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60C51900890B00EC083B /* CustomCellModeSurvival.m */; };
 		452C60C91900892200EC083B /* CustomCellModeCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60C81900892200EC083B /* CustomCellModeCountdown.m */; };
 		452C60CF1900A3F700EC083B /* CustomCellMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 452C60CE1900A3F600EC083B /* CustomCellMode.m */; };
+		4530085E1901A05C00B0212D /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 4530085D1901A05C00B0212D /* State.m */; };
+		453008611901A08500B0212D /* PracticeState.m in Sources */ = {isa = PBXBuildFile; fileRef = 453008601901A08500B0212D /* PracticeState.m */; };
+		453008641901A09500B0212D /* SurvivalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 453008631901A09500B0212D /* SurvivalState.m */; };
+		453008671901A09F00B0212D /* CountdownState.m in Sources */ = {isa = PBXBuildFile; fileRef = 453008661901A09F00B0212D /* CountdownState.m */; };
+		4530086A1901EF1700B0212D /* Equation.m in Sources */ = {isa = PBXBuildFile; fileRef = 453008691901EF1700B0212D /* Equation.m */; };
+		4530086D1901EF2600B0212D /* Operand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4530086C1901EF2600B0212D /* Operand.m */; };
 		456124BC18EF058A006D2E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BB18EF058A006D2E3A /* Foundation.framework */; };
 		456124BE18EF058A006D2E3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BD18EF058A006D2E3A /* CoreGraphics.framework */; };
 		456124C018EF058A006D2E3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456124BF18EF058A006D2E3A /* UIKit.framework */; };
@@ -74,6 +80,9 @@
 		4580FA8E19004CC5005FD4C7 /* ContainerModeWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580FA8D19004CC5005FD4C7 /* ContainerModeWindowViewController.m */; };
 		4580FA9219004CE2005FD4C7 /* ModeWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580FA9119004CE2005FD4C7 /* ModeWindowViewController.m */; };
 		45CC1D5818F6CB95001E9CBE /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */; };
+		45CE17371902D3DA00A0B493 /* ContainerOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CE17361902D3DA00A0B493 /* ContainerOperationViewController.m */; };
+		45CE173A1902DB1400A0B493 /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CE17391902DB1400A0B493 /* GameState.m */; };
+		45CE173D190317E500A0B493 /* OperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CE173C190317E500A0B493 /* OperationFactory.m */; };
 		45EB5C8018FC197300F9A9C6 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB5C7F18FC197300F9A9C6 /* RevMobAds.framework */; };
 		45EB5C8218FC19AD00F9A9C6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB5C8118FC19AD00F9A9C6 /* StoreKit.framework */; };
 		45EB5C8418FC19B700F9A9C6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EB5C8318FC19B700F9A9C6 /* AdSupport.framework */; };
@@ -186,6 +195,18 @@
 		452C60CA19008CB600EC083B /* CustomCellsMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellsMode.h; sourceTree = "<group>"; };
 		452C60CD1900A3F600EC083B /* CustomCellMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellMode.h; sourceTree = "<group>"; };
 		452C60CE1900A3F600EC083B /* CustomCellMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellMode.m; sourceTree = "<group>"; };
+		4530085C1901A05C00B0212D /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		4530085D1901A05C00B0212D /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		4530085F1901A08500B0212D /* PracticeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeState.h; sourceTree = "<group>"; };
+		453008601901A08500B0212D /* PracticeState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeState.m; sourceTree = "<group>"; };
+		453008621901A09500B0212D /* SurvivalState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurvivalState.h; sourceTree = "<group>"; };
+		453008631901A09500B0212D /* SurvivalState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurvivalState.m; sourceTree = "<group>"; };
+		453008651901A09F00B0212D /* CountdownState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownState.h; sourceTree = "<group>"; };
+		453008661901A09F00B0212D /* CountdownState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownState.m; sourceTree = "<group>"; };
+		453008681901EF1700B0212D /* Equation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equation.h; sourceTree = "<group>"; };
+		453008691901EF1700B0212D /* Equation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equation.m; sourceTree = "<group>"; };
+		4530086B1901EF2600B0212D /* Operand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operand.h; sourceTree = "<group>"; };
+		4530086C1901EF2600B0212D /* Operand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operand.m; sourceTree = "<group>"; };
 		456124B818EF058A006D2E3A /* Pitagorin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitagorin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456124BB18EF058A006D2E3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		456124BD18EF058A006D2E3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -220,6 +241,14 @@
 		4580FA9419004E56005FD4C7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		45CC1D5618F6CB95001E9CBE /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		45CC1D5718F6CB95001E9CBE /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
+		45CE17351902D3DA00A0B493 /* ContainerOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerOperationViewController.h; sourceTree = "<group>"; };
+		45CE17361902D3DA00A0B493 /* ContainerOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerOperationViewController.m; sourceTree = "<group>"; };
+		45CE17381902DB1400A0B493 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		45CE17391902DB1400A0B493 /* GameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameState.m; sourceTree = "<group>"; };
+		45CE173B190317E500A0B493 /* OperationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationFactory.h; sourceTree = "<group>"; };
+		45CE173C190317E500A0B493 /* OperationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationFactory.m; sourceTree = "<group>"; };
+		45CE1744190318BF00A0B493 /* OperationViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationViewControllers.h; sourceTree = "<group>"; };
+		45CE1747190319E900A0B493 /* States.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = States.h; sourceTree = "<group>"; };
 		45EB5C7F18FC197300F9A9C6 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevMobAds.framework; path = "../../Downloads/revmob-ios-sdk/RevMobAds.framework"; sourceTree = "<group>"; };
 		45EB5C8118FC19AD00F9A9C6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		45EB5C8318FC19B700F9A9C6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -403,6 +432,8 @@
 				450F22C918EF0A7A00F6532A /* ContainerMainWindowViewController.m */,
 				4580FA8C19004CC5005FD4C7 /* ContainerModeWindowViewController.h */,
 				4580FA8D19004CC5005FD4C7 /* ContainerModeWindowViewController.m */,
+				45CE17351902D3DA00A0B493 /* ContainerOperationViewController.h */,
+				45CE17361902D3DA00A0B493 /* ContainerOperationViewController.m */,
 			);
 			path = ContainerViewControllers;
 			sourceTree = "<group>";
@@ -410,8 +441,8 @@
 		450F22C318EF083600F6532A /* ContentViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4580FA8F19004CCE005FD4C7 /* ModeWindowViewControllers */,
 				4570FC5618FB067C0018D2F2 /* MainWindowViewControllers */,
+				4580FA8F19004CCE005FD4C7 /* ModeWindowViewControllers */,
 				450F22CB18EF147D00F6532A /* OperationsViewController */,
 			);
 			path = ContentViewControllers;
@@ -429,11 +460,15 @@
 		450F22CB18EF147D00F6532A /* OperationsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4530085B1901A05000B0212D /* State */,
 				45CC1D5518F6CB84001E9CBE /* InterfaceElements */,
 				450F22CC18EF149000F6532A /* OperationViewController.h */,
 				450F22CD18EF149000F6532A /* OperationViewController.m */,
 				450F22CF18EF14A200F6532A /* SumaViewController.h */,
 				450F22D018EF14A200F6532A /* SumaViewController.m */,
+				45CE173B190317E500A0B493 /* OperationFactory.h */,
+				45CE173C190317E500A0B493 /* OperationFactory.m */,
+				45CE1744190318BF00A0B493 /* OperationViewControllers.h */,
 			);
 			path = OperationsViewController;
 			sourceTree = "<group>";
@@ -452,6 +487,22 @@
 				452C60CA19008CB600EC083B /* CustomCellsMode.h */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		4530085B1901A05000B0212D /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4530085C1901A05C00B0212D /* State.h */,
+				4530085D1901A05C00B0212D /* State.m */,
+				4530085F1901A08500B0212D /* PracticeState.h */,
+				453008601901A08500B0212D /* PracticeState.m */,
+				453008621901A09500B0212D /* SurvivalState.h */,
+				453008631901A09500B0212D /* SurvivalState.m */,
+				453008651901A09F00B0212D /* CountdownState.h */,
+				453008661901A09F00B0212D /* CountdownState.m */,
+				45CE1747190319E900A0B493 /* States.h */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		456124AF18EF058A006D2E3A = {
@@ -613,6 +664,12 @@
 			isa = PBXGroup;
 			children = (
 				4580FA9419004E56005FD4C7 /* Constants.h */,
+				453008681901EF1700B0212D /* Equation.h */,
+				453008691901EF1700B0212D /* Equation.m */,
+				4530086B1901EF2600B0212D /* Operand.h */,
+				4530086C1901EF2600B0212D /* Operand.m */,
+				45CE17381902DB1400A0B493 /* GameState.h */,
+				45CE17391902DB1400A0B493 /* GameState.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -739,30 +796,38 @@
 				450F227D18EF06BC00F6532A /* RefreshableViewController.m in Sources */,
 				452C60C61900890B00EC083B /* CustomCellModeSurvival.m in Sources */,
 				4580FA9219004CE2005FD4C7 /* ModeWindowViewController.m in Sources */,
+				45CE173D190317E500A0B493 /* OperationFactory.m in Sources */,
 				450F228518EF06BC00F6532A /* CustomCell.m in Sources */,
 				450F22CA18EF0A7A00F6532A /* ContainerMainWindowViewController.m in Sources */,
 				450F22B318EF071300F6532A /* ASIDataDecompressor.m in Sources */,
 				4570FC6518FB2BBF0018D2F2 /* CellData.m in Sources */,
 				450F22CE18EF149000F6532A /* OperationViewController.m in Sources */,
+				4530086A1901EF1700B0212D /* Equation.m in Sources */,
 				45CC1D5818F6CB95001E9CBE /* CountdownViewController.m in Sources */,
 				45EB5C8F18FC257800F9A9C6 /* SubstractCellData.m in Sources */,
+				453008641901A09500B0212D /* SurvivalState.m in Sources */,
 				450F22B418EF071300F6532A /* ASIDownloadCache.m in Sources */,
 				450F228818EF06BC00F6532A /* CustomHeaderFooterAppearance.m in Sources */,
 				456124CC18EF058A006D2E3A /* AppDelegate.m in Sources */,
 				456124C818EF058A006D2E3A /* main.m in Sources */,
 				450F22B718EF071300F6532A /* ASIInputStream.m in Sources */,
 				450F22B218EF071300F6532A /* ASIDataCompressor.m in Sources */,
+				4530085E1901A05C00B0212D /* State.m in Sources */,
 				452C60C91900892200EC083B /* CustomCellModeCountdown.m in Sources */,
+				453008671901A09F00B0212D /* CountdownState.m in Sources */,
 				450F228B18EF06BC00F6532A /* FabricaCeldas.m in Sources */,
 				450F228718EF06BC00F6532A /* CustomHeaderFooter.m in Sources */,
 				450F228D18EF06BC00F6532A /* SectionElement.m in Sources */,
 				452C60C3190088F600EC083B /* CustomCellModePractice.m in Sources */,
 				450F228C18EF06BC00F6532A /* FabricaHeaderFooterSecciones.m in Sources */,
+				45CE173A1902DB1400A0B493 /* GameState.m in Sources */,
 				450F228118EF06BC00F6532A /* MemoryPrinter.m in Sources */,
+				45CE17371902D3DA00A0B493 /* ContainerOperationViewController.m in Sources */,
 				450F22B518EF071300F6532A /* ASIFormDataRequest.m in Sources */,
 				450F22B618EF071300F6532A /* ASIHTTPRequest.m in Sources */,
 				450F227C18EF06BC00F6532A /* ParentViewController.m in Sources */,
 				450F227F18EF06BC00F6532A /* GeolocationManager.m in Sources */,
+				4530086D1901EF2600B0212D /* Operand.m in Sources */,
 				4570FC5918FB06C00018D2F2 /* MainMenuViewController.m in Sources */,
 				450F227B18EF06BC00F6532A /* LoadableWithTextFieldsForLoginViewController.m in Sources */,
 				4570FC6418FB2BBF0018D2F2 /* Cell.m in Sources */,
@@ -771,6 +836,7 @@
 				450F227A18EF06BC00F6532A /* LoadableWithTableViewController.m in Sources */,
 				450F22B818EF071300F6532A /* ASINetworkQueue.m in Sources */,
 				450F228418EF06BC00F6532A /* TratadorImagenes.m in Sources */,
+				453008611901A08500B0212D /* PracticeState.m in Sources */,
 				450F227818EF06BC00F6532A /* LoadableViewController.m in Sources */,
 				450F22C718EF092300F6532A /* AdViewController.m in Sources */,
 				450F228918EF06BC00F6532A /* CustomTableViewController.m in Sources */,

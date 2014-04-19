@@ -10,9 +10,9 @@
 
 @interface ModeWindowViewController : LoadableWithTableViewController
 
-@property(assign,nonatomic) OperationTypes operationType;
+//@property(assign,nonatomic) OperationTypes operationType;
 
-- (instancetype)initWithFrame:(CGRect)frame OperationType: (OperationTypes) operationType;
+//- (instancetype)initWithFrame:(CGRect)frame OperationType: (OperationTypes) operationType;
 
 #define SELECTEDCOLORAPARIENCIAMASTERTABLEVIEWMASTERTABLEVIEWIPHONE [UIColor colorWithRed:(133/255.0) green:(163/255.0) blue:(206/255.0) alpha:1]
 #define TEXTUNSELECTEDCOLORAPARIENCIAMASTERTABLEVIEWMASTERTABLEVIEWIPHONE nil

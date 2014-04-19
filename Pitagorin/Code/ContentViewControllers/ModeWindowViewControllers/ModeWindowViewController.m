@@ -16,13 +16,13 @@
 
 @implementation ModeWindowViewController
 
-- (instancetype)initWithFrame:(CGRect)frame OperationType: (OperationTypes) operationType{
+/*- (instancetype)initWithFrame:(CGRect)frame OperationType: (OperationTypes) operationType{
     self = [super initWithFrame:frame];
     if (self) {
         self.operationType = operationType;
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
@@ -47,15 +47,15 @@
     SectionElement * sectionElement;
     NSMutableArray * cells = [NSMutableArray array];
     
-    CustomCellModeCountdown * customCellModeCountdown = [[CustomCellModeCountdown alloc] initWithOperationType:self.operationType];
+    CustomCellModeCountdown * customCellModeCountdown = [[CustomCellModeCountdown alloc] init];
     [cells addObject:[self createCellMode:customCellModeCountdown ImageName:@"a"
                                  CellText:NSLocalizedString(@"Countdown", nil)]];
     
-    CustomCellModeSurvival * customCellModeSurvival = [[CustomCellModeSurvival alloc] initWithOperationType:self.operationType];
+    CustomCellModeSurvival * customCellModeSurvival = [[CustomCellModeSurvival alloc] init];
     [cells addObject:[self createCellMode:customCellModeSurvival ImageName:@"a"
                                  CellText:NSLocalizedString(@"Survival", nil)]];
     
-    CustomCellModePractice * customCellModePractice = [[CustomCellModePractice alloc] initWithOperationType:self.operationType];
+    CustomCellModePractice * customCellModePractice = [[CustomCellModePractice alloc] init];
     [cells addObject:[self createCellMode:customCellModePractice ImageName:@"a"
                                  CellText:NSLocalizedString(@"Practice", nil)]];
     
